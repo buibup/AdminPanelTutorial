@@ -8,7 +8,7 @@ namespace AdminPanelTutorial.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly ApplicationDbContext db;
+        private readonly ApplicationDbContext db = new ApplicationDbContext();
 
         public IActionResult Login()
         {
